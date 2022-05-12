@@ -1,0 +1,20 @@
+{
+	"name": "cypress-e2e-project",
+	"version": "1.0.0",
+	"description": "End to end automation project with Cypress",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "cypress open",
+		"cy:run": "cypress run"
+	},
+	"keywords": [
+		"cypress",
+		"e2e"
+	],
+	"author": "Alex Gherman",
+	"license": "ISC",
+	"dependencies": {
+		"cypress": "^9.6.1",
+		"prettier": "^2.6.2"
+	}
+}
