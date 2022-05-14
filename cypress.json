@@ -1,15 +1,11 @@
 {
-  "baseUrl": "https://www.google.com",
   "watchForFileChanges": false,
   "viewportWidth": 1000,
   "viewportHight": 600,
-  "waitForAnimations": true,
-  "animationDistanceTreshold": 20,
-  "defaultCommandTimeout": 5000,
-  "execTimeout": 60000,
-  "pageLoadTimeout": 60000,
-  "requestTimeout": 15000,
-  "responseTimeout": 15000,
   "video": false,
-  "failedOnStatusCode": false
+  "failedOnStatusCode": false,
+  "screenshotOnRunFailure": true,
+  "reporter": "mochawesome",
+  "projectId": "om8r7s",
+  "testFiles": "**/*.feature"
 }

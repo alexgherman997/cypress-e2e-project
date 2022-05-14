@@ -12,7 +12,7 @@ describe('Currency excahnge test', () => {
     cy.get('#pc_currency').select('Japan (yen)');
     cy.wait(1000);
     const amountUSD = 50;
-    cy.get('#pc_amount').type(amountUSD);
+    cy.get('#pc_amount').type(`${amountUSD}`);
     cy.get('#pc_inDollars_true').click();
     cy.get('#pc_calculate_costs').click();
     cy.get('#sp_sell_rate').then($elem => {

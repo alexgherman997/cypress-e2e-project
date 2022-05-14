@@ -13,8 +13,11 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
-import './commands'
+// This function is called when a project is opened or re-opened (e.g. due to
+// the project's config changing)
 
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+import './commands';
+import './userActions';
+
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+addMatchImageSnapshotCommand();
