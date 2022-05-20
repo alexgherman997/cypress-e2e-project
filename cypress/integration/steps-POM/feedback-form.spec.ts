@@ -1,4 +1,4 @@
-import FeedbackPage from '../../page-object-model/pages/Feedback';
+import FeedbackPage from '../../page-object-model/pages/FeedbackPage';
 
 describe('Feedback form test', () => {
   before(() => {
