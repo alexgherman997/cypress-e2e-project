@@ -1,6 +1,10 @@
 import BasePage from './BasePage';
 
 export default class LoginPage extends BasePage {
+  //i think this is correct apprach for POM, research it and change all Pages
+  private static inputLoginCSS: string = '#user_login';
+  private static inputPasswordCSS: string = '#user_password';
+
   static visit() {
     cy.visitLoginPage();
   }
@@ -18,11 +22,11 @@ export default class LoginPage extends BasePage {
   }
 
   static typeUsernameInput(username: string) {
-    cy.get('#user_login').type(username);
+    cy.get(LoginPage.inputLoginCSS).type(username);
   }
 
   static typePasswordInput(password: string) {
-    cy.get('#user_password').type(password);
+    cy.get(LoginPage.inputPasswordCSS).type(password);
   }
 
   static clickSignInButton() {

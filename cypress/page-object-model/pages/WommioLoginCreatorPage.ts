@@ -1,6 +1,7 @@
 import BasePage from './BasePage';
 
 export default class WommioLoginCreatorPage extends BasePage {
+
   static visitLoginCreator() {
     cy.visit('https://www.woomio.com/#/contentcreators/login/');
   }

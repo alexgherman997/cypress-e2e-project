@@ -25,8 +25,10 @@ Cypress.Commands.add('waitForSeconds', seconds => {
   cy.wait(1000 * seconds);
 });
 
+//Example: size == array : set window width, height ? set window like iphone-6
+//we use TS, size always will be an array
 Cypress.Commands.add('setResolution', size => {
-  cy.viewport(size[0], size[1]);
+  Array.isArray(size) ? cy.viewport(size[0], size[1]) : cy.viewport(size);
 });
 
 Cypress.Commands.add('visitLoginPage', () => {
