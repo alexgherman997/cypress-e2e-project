@@ -1,4 +1,4 @@
-//E2e test for login using POM pattern
+//E2e test for login using POM pattern - replace 
 import NavBar from '../../../page-object-model/components/NavBar';
 import LoginPage from '../../../page-object-model/pages/LoginPage';
 import {
