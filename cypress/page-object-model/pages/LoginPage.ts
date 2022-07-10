@@ -9,11 +9,11 @@ export default class LoginPage extends BasePage {
     cy.visitLoginPage();
   }
 
-  static login(username: string, password: string) {
+  public static login(username: string, password: string) {
     cy.login(username, password);
   }
 
-  static clickForgotPasswordLink() {
+  public static clickForgotPasswordLink() {
     cy.contains('Forgot your password').click();
   }
 

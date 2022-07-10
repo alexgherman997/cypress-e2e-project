@@ -17,6 +17,8 @@ describe('Check transfer money', () => {
     cy.get('[name="type"]').select('DEPOSIT');
 
     cy.get('[type="submit"]').click();
+
+
     // cy.get('#filtered_transactions_for_account')
     //   .find('tr')
     //   .should('contain', 'ONLINE');

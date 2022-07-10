@@ -2,7 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress"]
+    "types": ["cypress", "cypress-xpath"]
   },
-  "include": ["**/*.ts", "plugins/index.js", "integration/cucumber-tests/login/loginSteps.ts", "integration/common/common.js"]
+  "include": [
+    "**/*.ts",
+    "plugins/index.js",
+    "integration/cucumber-tests/login/loginSteps.ts",
+    "integration/common/common.js"
+  ]
 }
